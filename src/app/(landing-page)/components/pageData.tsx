@@ -7,13 +7,12 @@ import {
   WifiIcon,
 } from "../../../utils/landingIcon";
 export const landingPageData = {
-  offer: [ "Direct Booking Offer: Save 15% + Free Breakfast",
-  ],
+  offer: ["Direct Booking Offer: Save 15% + Free Breakfast"],
 
   hero: {
     image: "/landing-page/hero.png",
     tagline: "Luxury Stays · Rishikesh, Uttarakhand",
-    title: "Where the Himalayas meet indulgence.",
+    title: "Where the <i>Himalayas</i> meet indulgence.",
     description:
       "A boutique retreat perched above Rishikesh, with a rooftop pool, an artisan cafe, and suites framing the Ganges valley.",
     rated: "Rated 4.9 · 1480+ Guests",
@@ -75,7 +74,11 @@ export const landingPageData = {
       "Every room is finished in warm woods, hand laid marble and soft gold accents, a quiet counterpoint to the wild Himalayan setting outside.",
     cards: [
       {
-        images: ["/landing-page/Deluxe-Valley-Room.png"],
+        images: [
+          "/landing-page/18x.jpg",
+          "/landing-page/19x.jpg",
+          "/landing-page/20x.jpg",
+        ],
         title: "Deluxe Valley Room",
         amenities: ["King bed", "Valley view balcony", "Marble bath", "45 sqm"],
         buttons: [
@@ -90,7 +93,11 @@ export const landingPageData = {
         ],
       },
       {
-        images: ["/landing-page/Premium-Suite.png"],
+        images: [
+          "/landing-page/47x.jpg",
+          "/landing-page/31x.jpg",
+          "/landing-page/22x.jpg",
+        ],
         title: "Premium Suite",
         amenities: [
           "Private terrace",
@@ -110,7 +117,7 @@ export const landingPageData = {
         ],
       },
       {
-        images: ["/landing-page/Explorer-Bunk.png"],
+        images: ["/landing-page/66x.jpg", "/landing-page/67x.jpg"],
         title: "Explorer Bunk",
         amenities: [
           "Boutique dorm",
@@ -147,25 +154,25 @@ export const landingPageData = {
     ],
     items: [
       {
-        image: "/landing-page/Rooftop-Pool-&-Terrace.png",
+        image: "/landing-page/72x.jpg",
         title: "Rooftop Pool & Terrace",
         description:
           "Sunrise laps and evening cocktails, framed by the greater Himalayas.",
       },
       {
-        image: "/landing-page/On-The-Rocks-Cafe.png",
+        image: "/landing-page/50x.jpg",
         title: "On The Rocks Cafe",
         description:
           "A moody, plush cafe serving artisan coffee and continental plates all day.",
       },
       {
-        image: "/landing-page/Lounge-Bar.png",
+        image: "/landing-page/41x.jpg",
         title: "Lounge Bar",
         description:
           "Curated wines, signature cocktails, and a private mandala centrepiece.",
       },
       {
-        image: "/landing-page/Private-Balconies.png",
+        image: "/landing-page/54x.jpg",
         title: "Private Balconies",
         description:
           "Nearly every suite opens to mountain air and manicured foliage.",
@@ -188,13 +195,13 @@ export const landingPageData = {
     ],
     images: [
       "/landing-page/Container.png",
-      "/landing-page/Container-1.png",
-      "/landing-page/Container-2.png",
+      "/landing-page/88xx.jpg",
+      "/landing-page/Container-6.png",
       "/landing-page/Container-3.png",
       "/landing-page/Container-4.png",
-      "/landing-page/Container-5.png",
-      "/landing-page/Container-7.png",
-      "/landing-page/Container-6.png",
+      "/landing-page/81x.jpg",
+      "/landing-page/68x.jpg",
+      "/landing-page/82x.jpg",
     ],
   },
 
@@ -259,7 +266,7 @@ export const landingPageData = {
         distance: "00 min drive",
       },
     ],
-    mapUrl: contact.mapUrl
+    mapUrl: contact.mapUrl,
   },
 
   finalCta: {

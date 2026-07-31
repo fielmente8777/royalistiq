@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 @import "tailwindcss";
+
+
+
 
 :root {
   --background: #FAF6EE;
@@ -14,11 +18,13 @@
   --color-p1: #BF8D44;
   --color-dark: #0B0B0E;
   --color-light: #58554F;
-
   --font-primary: var(--font-cormorant);
 }
 
+.font-secondary {
+  font-family: "Fraunces", serif;
 
+}
 
 body {
   background: var(--background);

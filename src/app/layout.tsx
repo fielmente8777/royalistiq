@@ -2,7 +2,7 @@ import LandingFooter from "@/components/footer/LandingFooter";
 import LandingNavbar from "@/components/navbar/LandingNavbar";
 import OfferSection from "@/components/OfferSection";
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Jost } from "next/font/google";
+import { Cormorant_Garamond, Jost  } from "next/font/google";
 import "./globals.css";
 import "./style.scss";
 

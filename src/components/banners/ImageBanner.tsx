@@ -45,7 +45,7 @@ const ImageBanner: React.FC<ImageBannerProps> = ({
                   {tagline}
                 </p>
                 <h1
-                  className="font-primary text-4xl md:text-6xl/tight  text-white lg:max-w-xl mx-auto text-center"
+                  className="font-secondary text-4xl md:text-7xl/tight font-light text-white lg:max-w-2xl mx-auto text-center"
                   dangerouslySetInnerHTML={{ __html: title }}
                 ></h1>
                 <p className="text-white max-w-2xl mx-auto text-center mt-4">

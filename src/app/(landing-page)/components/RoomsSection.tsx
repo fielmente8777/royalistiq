@@ -2,20 +2,21 @@ import LinkButton from "@/components/buttons/LinkButton";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import { SectionHeading } from "@/components/typography";
 import Image from "next/image";
+import RoomImageSlider from "./slider/RoomImageSlider";
 
 interface RoomsSectionProps {
- tagline: string;
- title: string;
- description: string;
- cards: {
- images: string[];
- title: string;
- amenities: string[];
- buttons: {
- label: string;
- link: string;
- }[];
- }[];
+  tagline: string;
+  title: string;
+  description: string;
+  cards: {
+    images: string[];
+    title: string;
+    amenities: string[];
+    buttons: {
+      label: string;
+      link: string;
+    }[];
+  }[];
 }
 
 const RoomsSection: React.FC<RoomsSectionProps> = ({
@@ -52,15 +53,16 @@ export const RoomsCard: React.FC<RoomsSectionProps["cards"][0]> = ({
 }) => {
   return (
     <div className="flex flex-col rounded-2xl overflow-hidden box-shadow">
-      <div className="w-full relative aspect-4/3.5">
-        <Image src={images[0]} alt={title} fill className="object-cover" />
-      </div>
+      <RoomImageSlider images={images} title={title} />
       <div className="flex flex-col gap-2 border border-[#DFD6C9] bg-white p-8 rounded-b-2xl">
         <p className="text-dark text-2xl font-primary">{title}</p>
         <ul className="flex flex-col gap-6 my-2">
           {amenities.map((amenity, index) => (
-            <li key={index} className="text-light text-sm flex items-center gap-1.5">
-              <span className="bg-p1 w-1 aspect-square rounded-full"/>
+            <li
+              key={index}
+              className="text-light text-sm flex items-center gap-1.5"
+            >
+              <span className="bg-p1 w-1 aspect-square rounded-full" />
               {amenity}
             </li>
           ))}
