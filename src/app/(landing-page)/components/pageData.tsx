@@ -167,7 +167,7 @@ export const landingPageData = {
       },
       {
         image: "/landing-page/41x.jpg",
-        title: "Lounge Bar",
+        title: "Saaqi Rooftop Bar",
         description:
           "Curated wines, signature cocktails, and a private mandala centrepiece.",
       },
