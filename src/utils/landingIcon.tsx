@@ -28,8 +28,7 @@ export const PoolIcon = () => (
       strokeLinejoin="round"
     />
   </svg>
-)
-
+);
 
 export const HimalayanIcon = () => (
   <svg
@@ -54,8 +53,7 @@ export const HimalayanIcon = () => (
       </clipPath>
     </defs>
   </svg>
-)
-
+);
 
 export const CafeIcon = () => (
   <svg
@@ -101,8 +99,7 @@ export const CafeIcon = () => (
       </clipPath>
     </defs>
   </svg>
-)
-
+);
 
 export const WifiIcon = () => (
   <svg
@@ -148,8 +145,7 @@ export const WifiIcon = () => (
       </clipPath>
     </defs>
   </svg>
-)
-
+);
 
 export const HouseKeepingIcon = () => (
   <svg
@@ -195,8 +191,7 @@ export const HouseKeepingIcon = () => (
       </clipPath>
     </defs>
   </svg>
-)
-
+);
 
 export const StarIcon = () => (
   <svg
@@ -215,7 +210,7 @@ export const StarIcon = () => (
       strokeLinejoin="round"
     />
   </svg>
-)
+);
 
 export const OutlineLocationIcon = () => (
   <svg
@@ -240,4 +235,4 @@ export const OutlineLocationIcon = () => (
       strokeLinejoin="round"
     />
   </svg>
-)
+);

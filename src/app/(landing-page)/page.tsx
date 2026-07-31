@@ -9,11 +9,15 @@ import FinalCta from "./components/FinalCta";
 import AmenitiesSection from "./components/AmenitiesSection";
 import ImageBanner from "@/components/banners/ImageBanner";
 import PeekInside from "./components/PeekInside";
+import SlidingTitle from "@/components/sliders/SlidingTitle";
 
 export default function LandingPage() {
   return (
     <main className="bg-background">
       <ImageBanner {...landingPageData.hero} />
+      <SectionWithContainer defaultPadding={false} sectionClassName=" border-t border-p1 bg-dark">
+        <SlidingTitle items={landingPageData.highlights} />
+      </SectionWithContainer>
       <SectionWithContainer
         defaultPadding={false}
         sectionClassName="py-8 border-b border-primary lg:hidden"

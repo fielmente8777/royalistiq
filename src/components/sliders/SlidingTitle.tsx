@@ -5,14 +5,14 @@ export default function SlidingTitle({
   items,
   ariaHidden = false,
 }: {
-  items: string[];
+  items: { label: string; icon?: JSX.Element }[];
   ariaHidden?: boolean;
 }) {
   const titles = [...items, ...items, ...items];
 
   return (
     <div
-      className="relative overflow-hidden py-3 border border-primary text-light max_screen_width bg-transparent"
+      className="relative overflow-hidden py-3 text-white bg-transparent"
       aria-hidden={ariaHidden}
     >
       <div className="marquee-wrapper">
@@ -24,10 +24,8 @@ export default function SlidingTitle({
               className="marquee-item tracking-widest"
             >
               <span className="flex items-center gap-2">
-                <span>
-                  <ICon />
-                </span>
-                {t}
+                <span>{t.icon}</span>
+                {t.label}
               </span>
               {/* <span className="separator">
                 <ICon />
