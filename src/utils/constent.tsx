@@ -8,20 +8,20 @@ Thank you!`);
 
 
 export const contact = {
-  email: "reserve@12345678.com",
+  email: "Info@royalistiq.in",
   mapUrl: "",
-  phone: ["+91xxxxxxxx"],
+  phone: ["+918679655166"],
   address:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+    "NH58, Badrinath Marg, opp. Deecon Valley Apts, Tapovan, Rishikesh, Uttarakhand 249192",
   addressLink: "",
   socialMedia: {
     facebook: "https://www.facebook.com",
     instagram: "https://www.instagram.com/",
   },
-  callCta: `tel:+91xxxxxxxx`,
-  WhatsappCta: `https://wa.me/+91xxxxxxxx?text=${enCodeText}`,
-  // formDomain: "",
-  formDomain: "testmulti", //for testing
+  callCta: `tel:+91867955266`,
+  WhatsappCta: `https://wa.me/+918679655166?text=${enCodeText}`,
+  formDomain: " royalistiq",
+  // formDomain: "testmulti", //for testing
   formHid: "",
   // formHid: "",
 };
