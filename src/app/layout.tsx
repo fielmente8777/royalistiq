@@ -9,6 +9,8 @@ import Script from "next/script";
 import Call from "@/components/ContactButton/Call";
 import Whatsapp from "@/components/ContactButton/WhatsApp";
 import { contact } from "@/utils/constent";
+import { WebProvider } from "@/context-api/WebContext";
+import ImagePopup from "@/components/pop-up/ImagePopup";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -36,12 +38,14 @@ export default function RootLayout({
       className={`${jost.variable} ${cormorant.variable} h-full antialiased`}
     >
       <body suppressHydrationWarning={true}>
-        <OfferSection />
+        <WebProvider><OfferSection />
         <LandingNavbar />
         {children}
         <LandingFooter />
         <Call callNumber={contact.phone[0]} />
         <Whatsapp whatsAppNumber={contact.phone[0]} />
+        <ImagePopup />
+        </WebProvider>
       </body>
 
       <Script id="chatbot-config" strategy="afterInteractive">

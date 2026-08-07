@@ -1,6 +1,8 @@
+"use client"
 import LinkButton from "@/components/buttons/LinkButton";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import { SectionHeading } from "@/components/typography";
+import { useWebContext } from "@/context-api/WebContext";
 import Image from "next/image";
 
 interface PeekInsideProps {
@@ -28,7 +30,7 @@ const PeekInside: React.FC<PeekInsideProps> = ({
     "row-span-3",
     "row-span-3",
   ];
-
+  const {openGallery} = useWebContext();
   return (
     <SectionWithContainer sectionClassName="bg-dark">
       <div className="flex flex-col gap-8 lg:gap-12">
@@ -39,7 +41,7 @@ const PeekInside: React.FC<PeekInsideProps> = ({
           <SectionHeading title={title} titleColor="white" />
         </div>
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 grid-flow-row auto-rows-16 gap-4">
-          {images.map((image, index) => (
+          {images.slice(0, 8).map((image, index) => (
             <div
               key={index}
               className={`${
@@ -52,6 +54,14 @@ const PeekInside: React.FC<PeekInsideProps> = ({
                 fill
                 className="object-cover rounded-xl"
               />
+              {
+                index === 7 && (
+                  <button
+                    onClick={() => openGallery({images, index : 0})}
+                    className="absolute bottom-4 right-4 px-4 py-2 z-10 bg-black rounded-sm text-white flex items-center justify-center text-lg font-semibold rounded-xl"
+                    >View All </button> 
+                )
+              }
               {/* <div className="absolute inset-0 bg-black/40 z-10 text-white">{index}</div> */}
             </div>
           ))}

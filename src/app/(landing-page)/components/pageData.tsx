@@ -11,6 +11,7 @@ export const landingPageData = {
 
   hero: {
     image: "/landing-page/hero.png",
+    images:["/gallery/50x_11zon.jpg", "/room/12x_11zon.jpg", "/gallery/62x_11zon.jpg", "/gallery/88xx_11zon.jpg"],
     tagline: "Luxury Stays · Rishikesh, Uttarakhand",
     title: "Where the <i>Himalayas</i> meet indulgence.",
     description:
@@ -202,8 +203,27 @@ export const landingPageData = {
       "/landing-page/81x.jpg",
       "/landing-page/68x.jpg",
       "/landing-page/82x.jpg",
+      "/gallery/88xx_11zon.jpg",
+      "/gallery/85x_11zon.jpg",
+      "/gallery/84x_11zon.jpg",
+      "/gallery/83x_11zon.jpg",
+      "/gallery/62x_11zon.jpg",
+      "/gallery/61x_11zon.jpg",
+      "/gallery/50x_11zon.jpg",
+      "/room/4x_11zon.jpg",
+      "/room/5x_11zon.jpg",
+      "/room/10x_11zon.jpg",
+      "/room/12x_11zon.jpg",
+      "/room/16x_11zon.jpg",
+      "/room/17x_11zon.jpg",
+      "/room/22x_11zon.jpg",
+      "/room/43x_11zon.jpg",
+      "/room/44xx_11zon.jpg",
+      "/room/64x_11zon.jpg",
+      "/room/87xx_11zon.jpg",
+      "/room/47x_11zon.jpg",
     ],
-  },
+      },
 
   testimonials: {
     tagline: "Guest Stories",
@@ -251,19 +271,15 @@ export const landingPageData = {
     places: [
       {
         title: "Laxman Jhula",
-        distance: "00 min drive",
+        distance: "05 min drive",
       },
       {
-        title: "Ram Jhula & Parmarth Ghat",
-        distance: "00 min drive",
-      },
-      {
-        title: "Beatles Ashram",
-        distance: "00 min drive",
+        title: "Janki Setu",
+        distance: "15 min drive",
       },
       {
         title: "Dehradun Airport (DED)",
-        distance: "00 min drive",
+        distance: "45 min drive",
       },
     ],
     mapUrl: contact.mapUrl,

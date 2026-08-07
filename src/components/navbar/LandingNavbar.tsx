@@ -43,7 +43,7 @@ const LandingNavbar = () => {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`flex items-center gap-2 rounded-lg px-2 md:px-6 py-2 md:py-3 ${index === 0 ? "bg-transparent text-p1 border border-p1" : "bg-p1 text-white"} font-semibold hover:scale-95 transition-all duration-300 ease-in-out hover:shadow-lg`}
+                  className={`flex items-center uppercase gap-2 rounded-lg px-2 md:px-6 py-2 md:py-3 ${index === 0 ? "bg-transparent text-p1 border border-p1" : "bg-p1 text-white"} font-semibold hover:scale-95 transition-all duration-300 ease-in-out hover:shadow-lg`}
                 >
                   {index === 0 ? (
                     <span className="">

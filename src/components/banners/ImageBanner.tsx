@@ -1,10 +1,14 @@
+"use client"
 import Image from "next/image";
 import { Container, Section } from "../sectionComponants";
 import Form1 from "../forms/Form1";
 import { FillLocationIcon } from "@/utils/icons";
+import SwiperCarousel from "../sliders/SwiperCarousel";
+import { Autoplay, Navigation } from "swiper/modules";
 
 interface ImageBannerProps {
   image: string;
+  images: string[];
   tagline: string;
   title: string;
   description: string;
@@ -14,6 +18,7 @@ interface ImageBannerProps {
 const ImageBanner: React.FC<ImageBannerProps> = ({
   title,
   image,
+  images,
   tagline,
   description,
   benefits,
@@ -30,7 +35,17 @@ const ImageBanner: React.FC<ImageBannerProps> = ({
       defaultPadding={false}
       className="relative w-full lg:aspect-16/9.5 aspect-4/7 overflow-hidden"
     >
-      <Image src={image} alt={title} fill className="object-cover" />
+      <SwiperCarousel
+        data={images}
+        modules={[Autoplay]}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        renderSlide={(src) => (
+          <div className="relative w-full lg:aspect-16/9.5 aspect-4/7 overflow-hidden">
+            <Image src={src} alt={title} fill className="object-cover" />
+          </div>
+        )}
+      />
+      {/* <Image src={image} alt={title} fill className="object-cover" /> */}
       <div className="absolute inset-0 z-10 bg-linear-to-b from-transparent lg:via-transparent to-black/80  " />
 
       <div className="absolute inset-0  z-20 flex items-end  pb-10 justify-center">
