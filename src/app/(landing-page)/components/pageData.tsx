@@ -286,7 +286,7 @@ export const landingPageData = {
   },
 
   finalCta: {
-    image: "/landing-page/final-cta.png",
+    image: "/47x.png",
     tagline: "Reserve your stay",
     title: "Book direct. <i class='text-p1'>Save 15%.</i>",
     description:

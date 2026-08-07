@@ -11,6 +11,7 @@ import Whatsapp from "@/components/ContactButton/WhatsApp";
 import { contact } from "@/utils/constent";
 import { WebProvider } from "@/context-api/WebContext";
 import ImagePopup from "@/components/pop-up/ImagePopup";
+import PopUpForm from "@/components/pop-up/PopUpForm";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -38,13 +39,15 @@ export default function RootLayout({
       className={`${jost.variable} ${cormorant.variable} h-full antialiased`}
     >
       <body suppressHydrationWarning={true}>
-        <WebProvider><OfferSection />
-        <LandingNavbar />
-        {children}
-        <LandingFooter />
-        <Call callNumber={contact.phone[0]} />
-        <Whatsapp whatsAppNumber={contact.phone[0]} />
-        <ImagePopup />
+        <WebProvider>
+          <OfferSection />
+          <LandingNavbar />
+          {children}
+          <LandingFooter />
+          <Call callNumber={contact.phone[0]} />
+          <Whatsapp whatsAppNumber={contact.phone[0]} />
+          <ImagePopup />
+          <PopUpForm />
         </WebProvider>
       </body>
 

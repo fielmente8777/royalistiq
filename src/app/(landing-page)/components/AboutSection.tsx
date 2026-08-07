@@ -26,8 +26,8 @@ const AboutSection: React.FC<AboutSectionProps> = ({
   return (
     <SectionWithContainer>
       <div className="grid lg:grid-cols-2 grid-cols-1 items-center gap-8">
-        <div className="hidden lg:block relative aspect-[4/4.35]">
-          <Image src={image} alt="about" fill className="object-cover" />
+        <div className="hidden lg:block relative aspect-[4/3.8]">
+          <Image src={image} alt="about" fill className="object-cover rounded-2xl" />
         </div>
         <div className="flex flex-col gap-8">
           <div className="space-y-2">
