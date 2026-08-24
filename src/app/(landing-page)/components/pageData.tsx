@@ -11,7 +11,13 @@ export const landingPageData = {
 
   hero: {
     image: "/landing-page/hero.png",
-    images:["/gallery/50x_11zon.jpg", "/room/12x_11zon.jpg", "/gallery/62x_11zon.jpg", "/gallery/88xx_11zon.jpg"],
+    images: [
+      "/gallery/bnr.png",
+      "/gallery/50x_11zon.jpg",
+      "/room/12x_11zon.jpg",
+      "/gallery/62x_11zon.jpg",
+      "/gallery/88xx_11zon.jpg",
+    ],
     tagline: "Luxury Stays · Rishikesh, Uttarakhand",
     title: "Where the <i>Himalayas</i> meet indulgence.",
     description:
@@ -76,12 +82,40 @@ export const landingPageData = {
     cards: [
       {
         images: [
-          "/landing-page/18x.jpg",
-          "/landing-page/19x.jpg",
-          "/landing-page/20x.jpg",
+          "/room/Deluxe-Twin/room-1.jpeg",
+          "/room/Deluxe-Twin/room-2.jpeg",
+          "/room/Deluxe-Twin/room-3.jpeg",
+          "/room/Deluxe-Twin/room-4.jpeg",
         ],
-        title: "Deluxe Valley Room",
-        amenities: ["King bed", "Valley view balcony", "Marble bath", "45 sqm"],
+        title: "Deluxe Twin",
+        amenities: [
+          "TCM supply with electric kettle",
+          "Minibar",
+          "WiFi",
+          "water bottles",
+          "toiletries",
+        ],
+        buttons: [
+          {
+            label: "Enquire Now",
+            link: contact.WhatsappCta,
+          },
+          {
+            label: "Book Now",
+            link: "#form",
+          },
+        ],
+      },
+      {
+        images: ["/room/delux-king.jpg", "/room/delux-king.jpg"],
+        title: "Deluxe King",
+        amenities: [
+          "TCM supply with electric kettle",
+          "Minibar",
+          "WiFi",
+          "water bottles",
+          "toiletries",
+        ],
         buttons: [
           {
             label: "Enquire Now",
@@ -95,16 +129,18 @@ export const landingPageData = {
       },
       {
         images: [
-          "/landing-page/47x.jpg",
-          "/landing-page/31x.jpg",
-          "/landing-page/22x.jpg",
+          "/room/family-suite/room-1.jpeg",
+          "/room/family-suite/room-3.jpeg",
+          "/room/family-suite/room-4.jpeg",
+          "/room/family-suite/room-2.jpeg",
         ],
-        title: "Premium Suite",
+        title: "Family Suite",
         amenities: [
-          "Private terrace",
-          "Living area",
-          "Mountain vista",
-          "65 sqm",
+          "TCM supply with electric kettle",
+          "Minibar",
+          "WiFi",
+          "water bottles",
+          "toiletries",
         ],
         buttons: [
           {
@@ -118,13 +154,39 @@ export const landingPageData = {
         ],
       },
       {
-        images: ["/landing-page/66x.jpg", "/landing-page/67x.jpg"],
-        title: "Explorer Bunk",
+        images: ["/room/superior-king.jpg", "/room/superior-king.jpg"],
+        title: "Superior King",
         amenities: [
-          "Boutique dorm",
-          "Personal locker",
-          "Reading light",
-          "Shared lounge",
+          "TCM supply with electric kettle",
+          "Minibar",
+          "WiFi",
+          "water bottles",
+          "toiletries",
+        ],
+        buttons: [
+          {
+            label: "Enquire Now",
+            link: contact.WhatsappCta,
+          },
+          {
+            label: "Book Now",
+            link: "#form",
+          },
+        ],
+      },
+      {
+        images: [
+          "/room/superior-triple/img-2.jpeg",
+          "/room/superior-triple/img-1.jpeg",
+          "/room/superior-triple/img-3.jpeg",
+        ],
+        title: "Superior King Triple",
+        amenities: [
+          "TCM supply with electric kettle",
+          "Minibar",
+          "WiFi",
+          "water bottles",
+          "toiletries",
         ],
         buttons: [
           {
@@ -195,14 +257,20 @@ export const landingPageData = {
       },
     ],
     images: [
-      "/landing-page/Container.png",
-      "/landing-page/88xx.jpg",
-      "/landing-page/Container-6.png",
-      "/landing-page/Container-3.png",
-      "/landing-page/Container-4.png",
-      "/landing-page/81x.jpg",
+      // "/landing-page/Container.png",
+      "/gallery/IMG_7123.png",
+      // "/landing-page/88xx.jpg",
+      // "/landing-page/Container-6.png",
+      // "/landing-page/Container-3.png",
+      // "/landing-page/Container-4.png",
+      // "/landing-page/81x.jpg",
+      "/gallery/IMG_7040.png",
+      "/gallery/IMG_7003.png",
+      "/gallery/IMG_7002.png",
+      "/gallery/IMG_7039.png",
+      "/gallery/IMG_6999.png",
       "/landing-page/68x.jpg",
-      "/landing-page/82x.jpg",
+      // "/landing-page/82x.jpg",
       "/gallery/88xx_11zon.jpg",
       "/gallery/85x_11zon.jpg",
       "/gallery/84x_11zon.jpg",
@@ -223,11 +291,11 @@ export const landingPageData = {
       "/room/87xx_11zon.jpg",
       "/room/47x_11zon.jpg",
     ],
-      },
+  },
 
   testimonials: {
     tagline: "Guest Stories",
-    title: "Loved by 4,200+ guests",
+    title: "Love from our Guests",
     buttons: [
       {
         label: "Enquire Now",
@@ -242,22 +310,22 @@ export const landingPageData = {
       {
         rating: "★★★★★",
         review:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        name: "Priya S.",
+          "The rooms were clean and comfortable, the staff was polite and helpful, and the overall atmosphere was pleasant. The food was delicious, and the service was excellent. Everything was well-maintained and made my stay comfortable and enjoyable. I would definitely recommend this hotel and would love to visit again.",
+        name: "Suhani Rawat",
         location: "Chennai",
       },
       {
         rating: "★★★★★",
         review:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        name: "Rahul M.",
+          "Very peaceful stay we really enjoyed the hospitality the food was really good and specially the reception staff is very cooperative and soft spoken...do visit it's worth it",
+        name: "Nakul Singh",
         location: "Bengaluru",
       },
       {
         rating: "★★★★★",
         review:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        name: "Anita R.",
+          "Had a wonderful stay at Royalistiq! Rooms were spotless, bed was super comfortable and staff was extremely courteous. Check-in was smooth and service was quick. Feels truly royal. Definitely coming back. Highly recommended.",
+        name: "Kanishka Chaunwal",
         location: "Mumbai",
       },
     ],

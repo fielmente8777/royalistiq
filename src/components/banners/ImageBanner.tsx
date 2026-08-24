@@ -38,7 +38,11 @@ const ImageBanner: React.FC<ImageBannerProps> = ({
       <SwiperCarousel
         data={images}
         modules={[Autoplay]}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        loop
+        slidesPerView={1}
+        spaceBetween={0}
+        speed = {2000}
+        autoplay={{ delay: 2000, disableOnInteraction: false }}
         renderSlide={(src) => (
           <div className="relative w-full lg:aspect-16/9.5 aspect-4/7 overflow-hidden">
             <Image src={src} alt={title} fill className="object-cover" />
