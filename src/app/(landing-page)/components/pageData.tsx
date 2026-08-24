@@ -263,6 +263,7 @@ export const landingPageData = {
       // "/landing-page/Container-3.png",
       // "/landing-page/Container-4.png",
       // "/landing-page/81x.jpg",
+      // "/landing-page/82x.jpg",
       
       "/gallery/IMG_7123.PNG",
       "/gallery/IMG_7040.PNG",
@@ -271,7 +272,6 @@ export const landingPageData = {
       "/gallery/IMG_7039.PNG",
       "/gallery/IMG_6999.PNG",
       "/landing-page/68x.jpg",
-      // "/landing-page/82x.jpg",
       "/gallery/88xx_11zon.jpg",
       "/gallery/85x_11zon.jpg",
       "/gallery/84x_11zon.jpg",
