@@ -41,7 +41,8 @@ export const footerData: FooterData = {
       title: "Locations",
       links: [
         {
-          title: contact.address,
+          label: contact.address,
+          href: contact.addressLink,
         },
       ],
     },

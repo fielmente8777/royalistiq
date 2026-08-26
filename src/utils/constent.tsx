@@ -6,14 +6,13 @@ Please share the best available options and rates.
 
 Thank you!`);
 
-
 export const contact = {
   email: "Info@royalistiq.in",
-  mapUrl: "",
+  mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6901.34553671994!2d78.31741519270156!3d30.132175849517996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39091645a5ac4b05%3A0x6d9da465561d02d0!2sRoyalistiq!5e0!3m2!1sen!2sin!4v1787761383748!5m2!1sen!2sin" ,
   phone: ["+918679655166"],
   address:
     "NH58, Badrinath Marg, opp. Deecon Valley Apts, Tapovan, Rishikesh, Uttarakhand 249192",
-  addressLink: "",
+  addressLink: "https://maps.app.goo.gl/4wcxcK4XpPGHJ9hk9",
   socialMedia: {
     facebook: "https://www.facebook.com",
     instagram: "https://www.instagram.com/",
