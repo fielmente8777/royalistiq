@@ -70,7 +70,9 @@ const LinkButton: React.FC<LinkButtonProps> = ({
       ) : (
         <Link
           href={href}
-          className={`flex items-center tracking-widest gap-1 border w-fit px-4 py-2 hover:scale-95 transition-all duration-300 ease-in-out hover:scale-x-105 active:scale-95 ${className}`}
+          target="_blank"
+          rel="noreferrer"
+          className={`flex uppercase items-center tracking-widest gap-1 border w-fit px-4 py-2 hover:scale-95 transition-all duration-300 ease-in-out hover:scale-x-105 active:scale-95 ${className}`}
           {...props}
         >
           {whatsAppIcon && <WhatsAppIcon />}
