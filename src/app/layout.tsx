@@ -39,6 +39,7 @@ export default function RootLayout({
       className={`${jost.variable} ${cormorant.variable} h-full antialiased`}
     >
       <head>
+        <meta name="google-site-verification" content="DPohN72mGORtH_RKSV5ii36awdCFuHgtxCayvbTFG9I" />
         {/* <!-- Google Tag Manager --> */}
         <Script
           id="gtm"
